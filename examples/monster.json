@@ -1,0 +1,129 @@
+{
+    "id": "8914a43d-5202-4000-a66e-ef66a220baf5",
+    "name": "Example Monster",
+    "slug": "example-monster",
+    "size": "M",
+    "type": "fiend (demon)",
+    "alignment": "Lawful Evil",
+    "ac": "12 (leather armor)",
+    "hp": "11 (2d8 + 2)",
+    "speed": {
+        "burrow": 10,
+        "climb": 20,
+        "fly": 30,
+        "swim": 40,
+        "walk": 50,
+        "hover": 60,
+        "other": "some other movement"
+    },
+    "str": 7,
+    "dex": 15,
+    "con": 9,
+    "int": 8,
+    "wis": 10,
+    "cha": 12,
+    "skills": {
+        "acrobatics": 4,
+        "animalHandling": 2,
+        "history": -1
+    },
+    "savingThrows": {
+        "str": 3,
+        "wis": 4,
+        "cha": -2
+    },
+    "damageImmunities": [
+        "cold",
+        "fire",
+        "Some custom damage"
+    ],
+    "damageVulnerabilities": [
+        "poison",
+        "acid",
+        "Some custom damage"
+    ],
+    "damageResistances": [
+        "fire",
+        "Bludgeoning, Piercing, and slashing from nonmagical attacks"
+    ],
+    "conditionImmunities": [
+        "blinded",
+        "charmed"
+    ],
+    "cr": "1/4",
+    "senses": {
+        "darkvision": 10,
+        "blindsight": 20,
+        "tremorsense": 30,
+        "truesight": 40,
+        "other": "some other sense"
+    },
+    "passivePerception": 12,
+    "passiveInsight": 11,
+    "initiative": 4,
+    "proficiency": 2,
+    "languages": [
+        "common",
+        "telepathy 120 ft"
+    ],
+    "environments": [
+        "artic",
+        "coastal"
+    ],
+    "traits": [
+        {
+            "name": "Some Trait",
+            "text": "*Trait content.* Markdown (GFM) is supported. [Fireball](spell)"
+        },
+        {
+            "name": "",
+            "text": ""
+        }
+    ],
+    "actions": [
+        {
+            "name": "",
+            "text": ""
+        }
+    ],
+    "reactions": [
+        {
+            "name": "",
+            "text": ""
+        }
+    ],
+    "legendaryActions": [
+        {
+            "name": "",
+            "text": ""
+        }
+    ],
+    "bonusActions": [
+        {
+            "name": "",
+            "text": ""
+        }
+    ],
+    "mythicActions": [
+        {
+            "name": "",
+            "text": ""
+        }
+    ],
+    "source": "MM",
+    "page": 42,
+    "link": "/modules/monster-manual/page/some-page",
+    "tags": [
+        "some",
+        "random",
+        "beast"
+    ],
+    "data": {
+        "customAttribute1": 12,
+        "customAttribute2": "asdf",
+        "customAttribute3": true
+    },
+    "image": "test-monster-art.jpg",
+    "token": "test-monster-token.png",
+    "descr": "### Heading 3\nThis is some description with markdown support"
+}
