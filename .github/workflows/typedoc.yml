@@ -1,5 +1,5 @@
 # ci.yml file for GitHub Actions
-name: CI
+name: typedoc
 
 on: [push, pull_request]
 
@@ -25,10 +25,7 @@ jobs:
         run: npm ci
 
       - name: Test to see if the project compiles
-        run: bash build.sh
-
-      - name: Perform automated checks
-        run: bash lint.sh
+        run: npm run build
 
       - name: Create the docs directory locally in CI
         run: npx typedoc
