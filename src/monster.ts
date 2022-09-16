@@ -123,14 +123,21 @@
         "random",
         "beast"
     ],
+    "descr": "### Heading 3\nThis is some description with markdown support",
+    "notes": "custom notes for DM",
     "data": {
         "customAttribute1": 12,
         "customAttribute2": "asdf",
         "customAttribute3": true
     },
+    "attributes": {
+        "customAttribute4": 12,
+        "customAttribute5": "asdf",
+        "customAttribute6": true
+    },
+    "content": "custom text content inside stat block",
     "image": "test-monster-art.jpg",
-    "token": "test-monster-token.png",
-    "descr": "### Heading 3\nThis is some description with markdown support"
+    "token": "test-monster-token.png"
 }
  * ```
  */
@@ -152,7 +159,7 @@ export interface Monster {
      * Entity name
      */
     name: string
-    
+
     /** 
      * Used in link references, for example: `/monster/adult-dragon`. If missing, it will be automatically generated from {@link name} field. 
      * @example
@@ -266,7 +273,7 @@ export interface Monster {
     ```
      */
     damageImmunities?: [string]
-    
+
     /**
      * Damage Vulnerabilities. Array of damage types. List of damage types should be provided by game system. Custom values are allowed.
      *  * @example
@@ -295,11 +302,6 @@ export interface Monster {
     conditionImmunities?: [string]
 
     /**
-     * Description. Markdown (GFM) is supported.
-     */
-    descr?: string
-
-    /**
      * Challenge Rating. Experience will be automatically calucalted based on the value
      * @example
      * 1/4
@@ -311,15 +313,15 @@ export interface Monster {
      * @experimental
      */
     senses?: Senses
-    
+
     /**
      * Passive Perception. It wil show in sesnes row.
      */
     passivePerception?: number
 
-     /**
-     * Passive Insight. It wil show in sesnes row.
-     */
+    /**
+    * Passive Insight. It wil show in sesnes row.
+    */
     passiveInsight?: number
 
     /**
@@ -331,7 +333,7 @@ export interface Monster {
      * Proficiency Bonus. If empty, it will be automatically calculated
      */
     proficiency?: number
-    
+
     /**
      * Languages. Array of language types. List of language types should be provided by game system. Custom values are allowed.
      *  * @example
@@ -410,6 +412,16 @@ export interface Monster {
     tags?: [string]
 
     /**
+     * Description. Markdown (GFM) is supported.
+     */
+    descr?: string
+
+    /**
+     * DM Notes. Markdown (GFM) is supported.
+     */
+    notes?: string
+
+    /**
      * Image Artwork.
      * @group Images
      */
@@ -426,6 +438,17 @@ export interface Monster {
      * @experimental
      */
     data?: any
+
+    /**
+     * Custom attributes
+     * @experimental
+     */
+    attributes?: any
+
+    /**
+    * Custom Content. Markdown (GFM) is supported.
+    */
+    content?: string
 }
 
 /**
@@ -440,11 +463,11 @@ export interface Monster {
  * ```
  */
 export interface MonsterFeature {
-  name?: string
-  /**
-   * Text content for the feature. Markdown (GFM) is supported.
-   */
-  text?: string
+    name?: string
+    /**
+     * Text content for the feature. Markdown (GFM) is supported.
+     */
+    text?: string
 }
 
 /**
@@ -464,13 +487,13 @@ export interface MonsterFeature {
  * ```
  */
 export interface Movement {
-  burrow?: number
-  climb?: number
-  fly?: number
-  swim?: number
-  walk?: number
-  hover?: number
-  other?: string
+    burrow?: number
+    climb?: number
+    fly?: number
+    swim?: number
+    walk?: number
+    hover?: number
+    other?: string
 }
 
 /**
@@ -488,29 +511,29 @@ export interface Movement {
  * ```
  */
 export interface Senses {
-  darkvision?: number
-  blindsight?: number
-  tremorsense?: number
-  truesight?: number
-  other?: string
+    darkvision?: number
+    blindsight?: number
+    tremorsense?: number
+    truesight?: number
+    other?: string
 }
 
 /**
  * Creature Size, used in {@link Monster}] and Token
  */
 export enum Size {
-  /** 0.5x0.5 */
-  tiny = "T",
-  /** 0.7x0.7 */
-  small = "S",
-  /** 1x1 */
-  medium = "M",
-  /** 2x2 */
-  large = "L",
-  /** 3x3 */
-  huge = "H",
-  /** 4x4 */
-  gargantuan = "G",
-  /** 8x8 */
-  colossal = "C",
+    /** 0.5x0.5 */
+    tiny = "T",
+    /** 0.7x0.7 */
+    small = "S",
+    /** 1x1 */
+    medium = "M",
+    /** 2x2 */
+    large = "L",
+    /** 3x3 */
+    huge = "H",
+    /** 4x4 */
+    gargantuan = "G",
+    /** 8x8 */
+    colossal = "C",
 }

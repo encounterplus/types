@@ -118,12 +118,19 @@
         "random",
         "beast"
     ],
+    "descr": "### Heading 3\nThis is some description with markdown support",
+    "notes": "custom notes for DM",
     "data": {
         "customAttribute1": 12,
         "customAttribute2": "asdf",
         "customAttribute3": true
     },
+    "attributes": {
+        "customAttribute4": 12,
+        "customAttribute5": "asdf",
+        "customAttribute6": true
+    },
+    "content": "custom text content inside stat block",
     "image": "test-monster-art.jpg",
-    "token": "test-monster-token.png",
-    "descr": "### Heading 3\nThis is some description with markdown support"
+    "token": "test-monster-token.png"
 }
