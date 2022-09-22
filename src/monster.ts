@@ -147,14 +147,6 @@ export interface Monster {
      */
     id?: string
 
-    /**
-     * Entity kind. List of possible entity kinds should be defined in the game system. 
-     * @experimental
-     * @example
-     * npc
-     */
-    kind?: string
-
     /** 
      * Entity name
      */
